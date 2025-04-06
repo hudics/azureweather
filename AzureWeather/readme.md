@@ -1,1 +1,1 @@
-You need specifiy the config "OpenWeatherMap:ApiKey"
+Please ensure that the API key for OpenWeatherMap is provided in your configuration: "OpenWeatherMap:ApiKey"
