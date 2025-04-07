@@ -23,7 +23,7 @@ namespace AzureWeather
         }
 
         [Function(nameof(FetchWeatherFunction))]
-        public async Task Run([TimerTrigger("0 0 * * * *")] TimerInfo myTimer)
+        public async Task Run([TimerTrigger("0 * * * * *")] TimerInfo myTimer)
         {
             _logger.LogInformation($"C# FetchWeatherFunction function executed at: {DateTime.Now}");
             try

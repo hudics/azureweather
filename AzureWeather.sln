@@ -11,15 +11,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AzureWeatherFunctions", "Az
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AzureWeatherWebApp", "AzureWeatherWebApp", "{E72B36E7-5F72-4117-AB87-072F15BD36B6}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "frontend", "frontend", "{F0F1DD87-F04A-4DD8-818C-125F382F9328}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "backend", "backend", "{FAF7C63B-DABB-44BC-955D-34965AF6E776}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureWeatherWebApp.API", "AzureWeatherWebApp.API\AzureWeatherWebApp.API.csproj", "{12EB3870-79A9-4ABB-BE2E-B6DC26880270}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzureWeatherWebApp.API", "AzureWeatherWebApp.API\AzureWeatherWebApp.API.csproj", "{12EB3870-79A9-4ABB-BE2E-B6DC26880270}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureWeatherWebApp.Infrastructure", "AzureWeatherWebApp.Infrastructure\AzureWeatherWebApp.Infrastructure.csproj", "{BD6E6DD1-7351-45E1-93A6-A15508BB1005}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzureWeatherWebApp.Infrastructure", "AzureWeatherWebApp.Infrastructure\AzureWeatherWebApp.Infrastructure.csproj", "{BD6E6DD1-7351-45E1-93A6-A15508BB1005}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureWeatherWebApp.Core", "AzureWeatherWebApp.Core\AzureWeatherWebApp.Core.csproj", "{62451FA9-C4CC-440E-992A-D666A743DC3F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzureWeatherWebApp.Core", "AzureWeatherWebApp.Core\AzureWeatherWebApp.Core.csproj", "{62451FA9-C4CC-440E-992A-D666A743DC3F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzureWeatherWebApp.Functions", "AzureWeatherWebApp.Functions\AzureWeatherWebApp.Functions.csproj", "{09278436-41EB-422D-B5EE-7CAFB5808381}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -47,6 +47,10 @@ Global
 		{62451FA9-C4CC-440E-992A-D666A743DC3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{62451FA9-C4CC-440E-992A-D666A743DC3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{62451FA9-C4CC-440E-992A-D666A743DC3F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{09278436-41EB-422D-B5EE-7CAFB5808381}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09278436-41EB-422D-B5EE-7CAFB5808381}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09278436-41EB-422D-B5EE-7CAFB5808381}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09278436-41EB-422D-B5EE-7CAFB5808381}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -54,11 +58,11 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{2DF7CD44-0D20-4AAC-92C1-33FFE9866AD3} = {3AAA0F9B-2D8F-470D-B58F-F2DB38C271D1}
 		{97A71313-B85B-4954-83BF-E9A8F177FB98} = {3AAA0F9B-2D8F-470D-B58F-F2DB38C271D1}
-		{F0F1DD87-F04A-4DD8-818C-125F382F9328} = {E72B36E7-5F72-4117-AB87-072F15BD36B6}
 		{FAF7C63B-DABB-44BC-955D-34965AF6E776} = {E72B36E7-5F72-4117-AB87-072F15BD36B6}
 		{12EB3870-79A9-4ABB-BE2E-B6DC26880270} = {FAF7C63B-DABB-44BC-955D-34965AF6E776}
 		{BD6E6DD1-7351-45E1-93A6-A15508BB1005} = {FAF7C63B-DABB-44BC-955D-34965AF6E776}
 		{62451FA9-C4CC-440E-992A-D666A743DC3F} = {FAF7C63B-DABB-44BC-955D-34965AF6E776}
+		{09278436-41EB-422D-B5EE-7CAFB5808381} = {FAF7C63B-DABB-44BC-955D-34965AF6E776}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {508BE5C8-254B-483C-BA52-CE998A96789F}

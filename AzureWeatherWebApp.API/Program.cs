@@ -1,3 +1,10 @@
+using Core.Interfaces.Repository;
+using Core.Interfaces.Services;
+using Core.Services;
+using Infrastructure.Data;
+using Infrastructure.Repositories;
+using Microsoft.EntityFrameworkCore;
+
 namespace AzureWeatherWebApp.API
 {
     public class Program
@@ -6,7 +13,10 @@ namespace AzureWeatherWebApp.API
         {
             var builder = WebApplication.CreateBuilder(args);
 
-            // Add services to the container.
+            builder.Services.AddDbContext<AppDbContext>(options =>
+                options.UseSqlite(builder.Configuration.GetConnectionString("WeatherDatabase")));
+            builder.Services.AddScoped<IWeatherRepository, WeatherRepository>();
+            builder.Services.AddScoped<IWeatherCityForecastService, WeatherCityForecastService>();
 
             builder.Services.AddControllers();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
